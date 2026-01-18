@@ -444,10 +444,69 @@ function throttle(func, limit) {
 }
 
 // ==========================================
-// Console Easter Egg
+// Console Easter Egg - Currículo
 // ==========================================
-console.log('%c🚀 Leonardo M. Silva', 'font-size: 24px; font-weight: bold; color: #6366f1;');
-console.log('%cSenior Full-Stack Engineer', 'font-size: 14px; color: #a0a0b0;');
-console.log('%c━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━', 'color: #6366f1;');
-console.log('%cInteressado em ver o código?', 'font-size: 12px; color: #10b981;');
-console.log('%cgithub.com/leonardo-matheus', 'font-size: 12px; color: #8b5cf6;');
+console.log(`
+%c╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║   🚀  LEONARDO M. SILVA                                          ║
+║   Senior Full-Stack Software Engineer                            ║
+║                                                                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║                                                                  ║
+║   📍 Localização: Matão, SP - Brasil                             ║
+║   💼 Empresa Atual: Move Mais TAG de Pedágio                     ║
+║   📧 Email: contato@leonardomdev.me                              ║
+║                                                                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║                           SOBRE MIM                              ║
+╠══════════════════════════════════════════════════════════════════╣
+║                                                                  ║
+║   • Comecei a programar aos 11 anos com Java (Minecraft)         ║
+║   • Primeiro emprego aos 17 anos com projetos frontend           ║
+║   • Atualmente Dev Java Sênior + Freelancer                      ║
+║   • +7 anos de experiência em produção                           ║
+║                                                                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║                         HARD SKILLS                              ║
+╠══════════════════════════════════════════════════════════════════╣
+║                                                                  ║
+║   💻 Linguagens:                                                 ║
+║      Java • Rust • TypeScript • Python • PHP • Kotlin            ║
+║      Ruby • C++ • C#                                             ║
+║                                                                  ║
+║   🛠️  Frameworks:                                                 ║
+║      Spring Boot • React • Vue.js • Next.js • Laravel            ║
+║      Rails • Angular • .NET • Zend/Laminas                       ║
+║                                                                  ║
+║   🗄️  Databases:                                                  ║
+║      PostgreSQL • MongoDB • Redis • MySQL • Oracle               ║
+║      SQLite • H2                                                 ║
+║                                                                  ║
+║   ⚙️  DevOps & Tools:                                             ║
+║      Docker • Git • Linux • Jenkins • Nginx                      ║
+║                                                                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║                          CONTATO                                 ║
+╠══════════════════════════════════════════════════════════════════╣
+║                                                                  ║
+║   🔗 LinkedIn: linkedin.com/in/leonardo-m-silva                 ║
+║   🐙 GitHub:   github.com/leonardo-matheus                       ║
+║   📱 WhatsApp: +55 16 99761-4410                                 ║
+║                                                                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║                                                                  ║
+║   💡 Interessado em colaborar? Vamos conversar!                  ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+`, 'font-family: monospace; color: #6366f1; font-size: 12px; line-height: 1.4;');
+
+console.log('%c👋 Olá, recrutador! Que bom te ver por aqui.', 'font-size: 14px; color: #10b981; font-weight: bold;');
+console.log('%c📄 Quer o código deste portfolio?', 'font-size: 12px; color: #8b5cf6;');
+
+console.log('\n%c🔗 Links Diretos:', 'font-size: 13px; font-weight: bold; color: #6366f1;');
+console.log('%c   LinkedIn: %chttps://www.linkedin.com/in/leonardo-m-silva/', 'color: #a0a0b0;', 'color: #0077b5;');
+console.log('%c   GitHub:   %chttps://github.com/leonardo-matheus', 'color: #a0a0b0;', 'color: #8b5cf6;');
+console.log('%c   WhatsApp: %chttps://wa.me/5516997614410', 'color: #a0a0b0;', 'color: #25d366;');
+console.log('%c   Email:    %chttps://mailto:contato@leonardomdev.me', 'color: #a0a0b0;', 'color: #ef4444;');
+console.log('%c   Portfolio:%chttps://leonardo-matheus.github.io/Portfolio-V3/', 'color: #a0a0b0;', 'color: #f59e0b;');
