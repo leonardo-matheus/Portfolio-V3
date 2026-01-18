@@ -1,0 +1,18 @@
+{
+  "name": "Leonardo M. Silva | Portfolio",
+  "short_name": "LMS Portfolio",
+  "description": "Senior Full-Stack Software Engineer - Arquitetando sistemas escaláveis e soluções de alta performance",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
