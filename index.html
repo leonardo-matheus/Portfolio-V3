@@ -275,44 +275,49 @@
 
                     <div class="about-visual">
                         <div class="experience-timeline">
-                            <div class="timeline-item">
+                            <div class="timeline-item" data-experience="movemais">
                                 <div class="timeline-dot"></div>
                                 <div class="timeline-content">
                                     <span class="timeline-year">Dez 2025 - Presente</span>
                                     <h4>Desenvolvedor Java Sênior</h4>
                                     <p>Move Mais TAG de Pedágio · Araraquara, SP</p>
+                                    <span class="timeline-click-hint">Clique para detalhes</span>
                                 </div>
                             </div>
-                            <div class="timeline-item">
+                            <div class="timeline-item" data-experience="microsoft">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-year">Fev 2024 - Dez 2025</span>
+                                    <h4>Gerente de Projetos</h4>
+                                    <p>Microsoft · Remoto, Brasil</p>
+                                    <span class="timeline-click-hint">Clique para detalhes</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-experience="questconsult">
                                 <div class="timeline-dot"></div>
                                 <div class="timeline-content">
                                     <span class="timeline-year">Jul 2023 - Jun 2025</span>
                                     <h4>Professor de Programação</h4>
                                     <p>Quest Consult · Araraquara, SP</p>
+                                    <span class="timeline-click-hint">Clique para detalhes</span>
                                 </div>
                             </div>
-                            <div class="timeline-item">
+                            <div class="timeline-item" data-experience="techfix">
                                 <div class="timeline-dot"></div>
                                 <div class="timeline-content">
-                                    <span class="timeline-year">Paralelo</span>
-                                    <h4>Freelancer</h4>
-                                    <p>Projetos web, APIs e aplicações desktop</p>
+                                    <span class="timeline-year">Jun 2017 - Presente</span>
+                                    <h4>Engenheiro de Software</h4>
+                                    <p>Techfix · Freelance, Híbrido</p>
+                                    <span class="timeline-click-hint">Clique para detalhes</span>
                                 </div>
                             </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <span class="timeline-year">16 anos de idade</span>
-                                    <h4>Primeiros Projetos</h4>
-                                    <p>Projetos por hobby e aprendizado para empresas e pequenos negócios</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
+                            <div class="timeline-item" data-experience="inicio">
                                 <div class="timeline-dot"></div>
                                 <div class="timeline-content">
                                     <span class="timeline-year">11 anos de idade</span>
                                     <h4>Início na Programação</h4>
                                     <p>Java com mods e plugins de Minecraft</p>
+                                    <span class="timeline-click-hint">Clique para detalhes</span>
                                 </div>
                             </div>
                         </div>
@@ -913,6 +918,51 @@
             </div>
         </div>
     </footer>
+
+    <!-- Experience Modal -->
+    <div class="experience-modal" id="experienceModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-company-logo" id="modalLogo"></div>
+                    <div class="modal-title-group">
+                        <h3 class="modal-title" id="modalTitle"></h3>
+                        <p class="modal-company" id="modalCompany"></p>
+                        <div class="modal-meta">
+                            <span class="modal-period" id="modalPeriod"></span>
+                            <span class="modal-location" id="modalLocation"></span>
+                            <span class="modal-type" id="modalType"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-section">
+                        <h4><span class="section-icon">📋</span> Descrição</h4>
+                        <p id="modalDescription"></p>
+                    </div>
+                    <div class="modal-section">
+                        <h4><span class="section-icon">🎯</span> Principais Desafios</h4>
+                        <ul id="modalChallenges"></ul>
+                    </div>
+                    <div class="modal-section">
+                        <h4><span class="section-icon">💡</span> Soluções & Conquistas</h4>
+                        <ul id="modalSolutions"></ul>
+                    </div>
+                    <div class="modal-section">
+                        <h4><span class="section-icon">🛠️</span> Tecnologias</h4>
+                        <div class="modal-tech-stack" id="modalTech"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>

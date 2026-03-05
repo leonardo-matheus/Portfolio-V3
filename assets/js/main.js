@@ -510,3 +510,235 @@ console.log('%c   GitHub:   %chttps://github.com/leonardo-matheus', 'color: #a0a
 console.log('%c   WhatsApp: %chttps://wa.me/5516997614410', 'color: #a0a0b0;', 'color: #25d366;');
 console.log('%c   Email:    %chttps://mailto:contato@leonardomdev.me', 'color: #a0a0b0;', 'color: #ef4444;');
 console.log('%c   Portfolio:%chttps://leonardo-matheus.github.io/Portfolio-V3/', 'color: #a0a0b0;', 'color: #f59e0b;');
+
+// ==========================================
+// Experience Modal System
+// ==========================================
+const experienceData = {
+    movemais: {
+        logo: '🚗',
+        title: 'Desenvolvedor Java Sênior',
+        company: 'Move Mais TAG de Pedágio',
+        period: 'Dez 2025 - Presente',
+        location: 'Araraquara, SP',
+        type: 'Tempo Integral · Presencial',
+        description: 'Atuação como desenvolvedor sênior no time de engenharia, responsável pelo desenvolvimento e manutenção de sistemas críticos de pedágio e gestão de tags. Trabalho com arquitetura de microsserviços, integrações com sistemas legados e otimização de performance em larga escala.',
+        challenges: [
+            'Integração com sistemas legados de pedágio de múltiplas concessionárias',
+            'Alta disponibilidade para processamento de milhões de transações diárias',
+            'Otimização de queries em banco de dados Oracle com alto volume',
+            'Modernização gradual de módulos monolíticos para microsserviços'
+        ],
+        solutions: [
+            'Implementação de filas assíncronas para processamento de transações',
+            'Criação de camada de cache distribuído reduzindo latência em 60%',
+            'Desenvolvimento de APIs RESTful documentadas com OpenAPI/Swagger',
+            'Migração de procedures PL/SQL críticas para serviços Java otimizados'
+        ],
+        technologies: [
+            { name: 'Java', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
+            { name: 'Spring Boot', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg' },
+            { name: 'Oracle', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg' },
+            { name: 'Redis', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg' },
+            { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
+            { name: 'Kubernetes', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg' }
+        ]
+    },
+    microsoft: {
+        logo: '🪟',
+        title: 'Gerente de Projetos',
+        company: 'Microsoft',
+        period: 'Fev 2024 - Dez 2025',
+        location: 'Brasil',
+        type: 'Temporário · Remoto',
+        description: 'Atuei na coordenação e desenvolvimento da refatoração do sistema de API fiscal, garantindo conformidade com as novas normas do SEFAZ e modelo 4.0 para NF-e, NFC-e e NFS-e. Liderança técnica em projeto crítico de compliance fiscal para o mercado brasileiro.',
+        challenges: [
+            'Adequação às constantes mudanças nas normas fiscais do SEFAZ',
+            'Migração de modelo 3.1 para modelo 4.0 sem downtime',
+            'Coordenação de equipes distribuídas em múltiplos fusos horários',
+            'Garantia de compatibilidade retroativa com clientes existentes'
+        ],
+        solutions: [
+            'Arquitetura de versionamento de API permitindo múltiplos modelos simultâneos',
+            'Implementação de testes automatizados contra schemas XSD do SEFAZ',
+            'Pipeline CI/CD com validação fiscal integrada',
+            'Documentação técnica e treinamento para equipes de suporte'
+        ],
+        technologies: [
+            { name: 'C#', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg' },
+            { name: '.NET', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg' },
+            { name: 'Azure', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg' },
+            { name: 'SQL Server', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg' },
+            { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' }
+        ]
+    },
+    questconsult: {
+        logo: '🎓',
+        title: 'Professor de Programação',
+        company: 'Quest Consult',
+        period: 'Jul 2023 - Jun 2025',
+        location: 'Araraquara, SP',
+        type: 'Meio Período · Presencial',
+        description: 'Professor de programação no projeto cultural Núcleo Mentes Brilhantes, um bootcamp intensivo fomentado pela Lei de Incentivo à Cultura (PRONAC/PROAC). Responsável por ensinar programação do zero, desde conceitos fundamentais como variáveis até desenvolvimento mobile com React Native.',
+        challenges: [
+            'Ensinar programação para alunos sem nenhum conhecimento prévio',
+            'Adaptar conteúdo técnico avançado para diferentes níveis de aprendizado',
+            'Manter engajamento em turmas com perfis diversos',
+            'Preparar alunos para o mercado de trabalho em tempo reduzido'
+        ],
+        solutions: [
+            'Metodologia hands-on com projetos práticos desde a primeira aula',
+            'Criação de material didático próprio com analogias do dia-a-dia',
+            'Mentorias individuais para acompanhamento personalizado',
+            'Simulação de ambiente profissional com code review e pair programming'
+        ],
+        technologies: [
+            { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+            { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+            { name: 'React Native', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+            { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
+            { name: 'Java', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
+            { name: 'Kotlin', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg' }
+        ]
+    },
+    techfix: {
+        logo: '💼',
+        title: 'Engenheiro de Software',
+        company: 'Techfix',
+        period: 'Jun 2017 - Presente',
+        location: 'Híbrido',
+        type: 'Freelance · PJ',
+        description: 'Atuação como engenheiro de software freelancer, desenvolvendo soluções personalizadas para clientes nacionais e internacionais. Experiência full-stack com múltiplas linguagens e frameworks, focando em entregar soluções eficientes e modernas. Autodidata com profundo entendimento dos fundamentos da programação.',
+        challenges: [
+            'Adaptar-se rapidamente a diferentes stacks tecnológicos por projeto',
+            'Gerenciar múltiplos projetos simultâneos com prazos apertados',
+            'Trabalhar com sistemas legados em linguagens diversas',
+            'Garantir qualidade em projetos com escopo variável'
+        ],
+        solutions: [
+            'Desenvolvimento de bibliotecas reutilizáveis entre projetos',
+            'Automação de processos repetitivos com scripts e ferramentas CLI',
+            'Implementação de práticas DevOps mesmo em projetos pequenos',
+            'Documentação técnica para facilitar manutenção futura'
+        ],
+        technologies: [
+            { name: 'Java', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
+            { name: '.NET', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg' },
+            { name: 'PHP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' },
+            { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+            { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+            { name: 'Vue.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg' },
+            { name: 'Laravel', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg' },
+            { name: 'Rust', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg' }
+        ]
+    },
+    inicio: {
+        logo: '🎮',
+        title: 'Início na Programação',
+        company: 'Autodidata',
+        period: '11 anos de idade',
+        location: 'Matão, SP',
+        type: 'Hobby · Aprendizado',
+        description: 'Minha jornada na programação começou aos 11 anos, movido pela curiosidade de entender como funcionavam os jogos que eu amava. Comecei criando mods e plugins para Minecraft em Java, aprendendo orientação a objetos, estruturas de dados e lógica de programação de forma autodidata.',
+        challenges: [
+            'Aprender programação sem orientação formal ou cursos',
+            'Entender conceitos complexos como POO e threads aos 11 anos',
+            'Debuggar código sem ferramentas adequadas',
+            'Lidar com documentação em inglês ainda aprendendo o idioma'
+        ],
+        solutions: [
+            'Estudo intensivo de tutoriais, fóruns e código open source',
+            'Experimentação constante com tentativa e erro',
+            'Participação ativa em comunidades de modding',
+            'Criação de projetos cada vez mais complexos para testar conhecimentos'
+        ],
+        technologies: [
+            { name: 'Java', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
+            { name: 'Eclipse', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg' },
+            { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' }
+        ]
+    }
+};
+
+// Initialize Experience Modal
+document.addEventListener('DOMContentLoaded', () => {
+    initExperienceModal();
+});
+
+function initExperienceModal() {
+    const modal = document.getElementById('experienceModal');
+    const modalClose = document.getElementById('modalClose');
+    const backdrop = modal?.querySelector('.modal-backdrop');
+    const timelineItems = document.querySelectorAll('.timeline-item[data-experience]');
+
+    if (!modal || !timelineItems.length) return;
+
+    // Open modal on timeline item click
+    timelineItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const experienceKey = item.getAttribute('data-experience');
+            const data = experienceData[experienceKey];
+
+            if (data) {
+                populateModal(data);
+                openModal(modal);
+            }
+        });
+    });
+
+    // Close modal events
+    modalClose?.addEventListener('click', () => closeModal(modal));
+    backdrop?.addEventListener('click', () => closeModal(modal));
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal(modal);
+        }
+    });
+}
+
+function populateModal(data) {
+    document.getElementById('modalLogo').textContent = data.logo;
+    document.getElementById('modalTitle').textContent = data.title;
+    document.getElementById('modalCompany').textContent = data.company;
+    document.getElementById('modalPeriod').innerHTML = `📅 ${data.period}`;
+    document.getElementById('modalLocation').innerHTML = `📍 ${data.location}`;
+    document.getElementById('modalType').textContent = data.type;
+    document.getElementById('modalDescription').textContent = data.description;
+
+    // Populate challenges
+    const challengesList = document.getElementById('modalChallenges');
+    challengesList.innerHTML = data.challenges.map(c => `<li>${c}</li>`).join('');
+
+    // Populate solutions
+    const solutionsList = document.getElementById('modalSolutions');
+    solutionsList.innerHTML = data.solutions.map(s => `<li>${s}</li>`).join('');
+
+    // Populate technologies
+    const techStack = document.getElementById('modalTech');
+    techStack.innerHTML = data.technologies.map(tech => `
+        <span>
+            <img src="${tech.icon}" alt="${tech.name}">
+            ${tech.name}
+        </span>
+    `).join('');
+}
+
+function openModal(modal) {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+
+    // Reset animations by removing and re-adding active class
+    const sections = modal.querySelectorAll('.modal-section');
+    sections.forEach(section => {
+        section.style.animation = 'none';
+        section.offsetHeight; // Trigger reflow
+        section.style.animation = null;
+    });
+}
+
+function closeModal(modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+}
